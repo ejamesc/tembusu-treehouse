@@ -99,8 +99,8 @@ function treehouse_scripts() {
 // Zurb foundation styles
 function responsive_styles()
 {
-    wp_register_style( 'foundation-style', get_template_directory_uri() . '/css/foundation.css', array(), 'all' );
-    wp_register_style( 'foundation-appstyle', get_template_directory_uri() . '/css/app.css', array(), 'all');
+    wp_register_style( 'foundation-style', get_template_directory_uri() . '/css/foundation.min.css', array(), 'all' );
+    wp_register_style( 'foundation-appstyle', get_template_directory_uri() . '/style.css', array(), 'all');
     wp_enqueue_style( 'foundation-style' );
     wp_enqueue_style( 'foundation-appstyle' );
 }

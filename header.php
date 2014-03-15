@@ -23,23 +23,21 @@
 <!--IE Fix for HTML5 Tags-->
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->>
+<![endif]-->
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</div>
+	<header id="masthead" class="row" role="banner">
+      <div class="large-12 columns">
+			  <h1 class="text-center"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+      </div>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<h1 class="menu-toggle"><?php _e( 'Menu', 'treehouse' ); ?></h1>
-			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'treehouse' ); ?></a>
-
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+		<nav id="navbar" class="large-12 columns" role="navigation">
+      <?php wp_nav_menu( array( 'theme_location' => 'primary', 
+                                'container' => false,
+                                'menu_class' => 'inline-list' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
