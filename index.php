@@ -18,7 +18,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-      <div class="small-12 large-10 columns">
+      <div class="small-12 large-9 columns">
         <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2"> 
 			  <?php /* Start the Loop */ ?>
 			  <?php while ( have_posts() ) : the_post(); ?>
