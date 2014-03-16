@@ -5,7 +5,7 @@
  * @package treehouse
  */
 ?>
-	<div id="secondary" class="widget-area" role="complementary">
+	<div id="secondary" class="small-12 large-2 columns" role="complementary">
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
 			<aside id="search" class="widget widget_search">
