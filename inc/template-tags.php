@@ -52,7 +52,7 @@ function treehouse_post_nav() {
 		return;
 	}
 	?>
-	<nav class="small-12 large-offset-2 large-7 columns" role="navigation">
+	<nav class="small-12 large-12 columns" role="navigation">
 		<div class="nav-links">
 			<?php
 				previous_post_link( '<div class="left">%link</div>', _x( '<span class="meta-nav">&larr;</span> %title', 'Previous post link', 'treehouse' ) );

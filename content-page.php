@@ -5,7 +5,7 @@
  * @package treehouse
  */
 ?>
-
+<div class="small-12 large-7 column">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
@@ -22,3 +22,4 @@
 	</div><!-- .entry-content -->
 	<?php edit_post_link( __( 'Edit', 'treehouse' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer>' ); ?>
 </article><!-- #post-## -->
+</div>
