@@ -5,6 +5,7 @@
  * @package treehouse
  */
 
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
@@ -31,7 +32,9 @@ function treehouse_setup() {
 	load_theme_textdomain( 'treehouse', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
+  add_theme_support( 'automatic-feed-links' );
+  // Add post thumbnails
+  add_theme_support( 'post-thumbnails' );
 
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
