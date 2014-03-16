@@ -99,13 +99,18 @@ function treehouse_scripts() {
 }
 //add_action( 'wp_enqueue_scripts', 'treehouse_scripts' );
 
-// Zurb foundation styles
 function responsive_styles()
 {
+    // Zurb foundation styles
     wp_register_style( 'foundation-style', get_template_directory_uri() . '/css/foundation.min.css', array(), 'all' );
     wp_register_style( 'foundation-appstyle', get_template_directory_uri() . '/style.css', array(), 'all');
+
+    // Google fonts styles
+    wp_register_style( 'andada-font', "http://fonts.googleapis.com/css?family=Andada", array(), 'all');
+      
     wp_enqueue_style( 'foundation-style' );
     wp_enqueue_style( 'foundation-appstyle' );
+    wp_enqueue_style( 'andada-font' );
 }
 add_action( 'wp_enqueue_scripts', 'responsive_styles' );
 

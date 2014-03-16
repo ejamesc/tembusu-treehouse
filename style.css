@@ -35,14 +35,28 @@ Treehouse is built on top of Underscores http://underscores.me/, (C) 2012-2014 A
  * ===================
  */
 
+body { 
+  font-family: 'Andada', Georgia, serif;
+}
+
 a { color: #006633 }
 a:hover { color: #669966 }
 
-#navbar {
-  list-style: none;
+
+/* HEADER STYLES
+ * ====================
+ */
+
+.masthead {
+  font-family: 'Andada', Georgia, serif;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-#navbar li { 
-  display: inline-block;
-}
+/* HOME PAGE STYLES
+ * =====================
+ */
 
+.entry-title {
+  font: 1.4rem 'Andada', Georgia, serif;
+}

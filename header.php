@@ -29,9 +29,9 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 
-	<header id="masthead" class="row" role="banner">
+	<header class="row" role="banner">
       <div class="large-12 columns">
-			  <h1 class="text-center"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			  <h1 class="text-center masthead"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
       </div>
 
 		<nav id="navbar" class="large-12 columns" role="navigation">
