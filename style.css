@@ -48,8 +48,7 @@ a:hover { color: #669966 }
  */
 
 .masthead {
-  font-family: 'Andada', Georgia, serif;
-  font-weight: bold;
+  font: 4rem 'Andada', Georgia, serif;
   text-transform: uppercase;
 }
 
@@ -86,4 +85,24 @@ a:hover { color: #669966 }
 
 .widget-title {
   font-size: 1.2rem;
+}
+
+.textwidget {
+  font-size: 1rem;
+  line-height: 140%;
+  margin-bottom: 1rem;
+}
+
+/* FOOTER STYLES */
+
+#footer-container { 
+  width: 100%; 
+  border-top: 1px solid #ddd; 
+  background-color: #ededed; 
+  padding-top: 2rem;
+}
+
+#colophon {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
