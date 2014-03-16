@@ -66,3 +66,24 @@ a:hover { color: #669966 }
 .entry-title {
   font: 1.4rem 'Andada', Georgia, serif;
 }
+
+.entry-summary p, .entry-meta, .entry-footer {
+  font-size: 0.8rem;
+}
+
+.entry-summary { margin-top: 0.8rem; }
+
+.cat-links {
+  text-transform: uppercase;
+  font: 0.6rem "Helvetica Neue", Arial, sans-serif;
+}
+
+/* SIDEBAR STYLES */
+
+#secondary aside ul {
+  font-size: 0.9rem;
+}
+
+.widget-title {
+  font-size: 1.2rem;
+}
