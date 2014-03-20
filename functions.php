@@ -107,10 +107,12 @@ function responsive_styles()
 
     // Google fonts styles
     wp_register_style( 'andada-font', "http://fonts.googleapis.com/css?family=Andada", array(), 'all');
-      
+    wp_register_style( 'pt-serif', "http://fonts.googleapis.com/css?family=PT+Serif", array(), 'all');
+
     wp_enqueue_style( 'foundation-style' );
     wp_enqueue_style( 'foundation-appstyle' );
     wp_enqueue_style( 'andada-font' );
+    wp_enqueue_style( 'pt-serif' );
 }
 add_action( 'wp_enqueue_scripts', 'responsive_styles' );
 
