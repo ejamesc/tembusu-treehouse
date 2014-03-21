@@ -3,19 +3,18 @@
  * @package treehouse
  */
 ?>
+<header class="single-header small-12 column">
+		<h1 class="single-title"><?php the_title(); ?></h1>
+</header><!-- .single-header -->
+
 <div class="small-12 large-2 column">
-    <div class="entry-meta">
+  <div class="entry-meta">
       <?php treehouse_posted_on(); ?>
-    </div><!-- .entry-meta -->    
+  </div><!-- .entry-meta -->    
 </div>
 
 <div class="small-12 large-7 column">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-
-
-	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php the_content(); ?>

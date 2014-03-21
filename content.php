@@ -18,10 +18,10 @@
 			<?php endif; // End if categories ?>
 		<?php endif; // End if 'post' == get_post_type() ?>
 
-<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
     <?php if( has_post_thumbnail() ) : ?>
       <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail() ?></a>
     <?php endif ?>
+<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
 		
 			</header><!-- .entry-header -->
