@@ -30,14 +30,17 @@
 <div id="page" class="hfeed site">
 
 	<header class="row" role="banner">
-      <div class="large-12 columns">
-			  <h1 class="text-center masthead"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+      <div class="text-center masthead">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+          <img alt="Treehouse, A Tembusu Publication" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" title="Treehouse, A Tembusu Publication" />
+        <h1 class="wordmark">Treehouse</h1>
+        </a>
       </div>
 
 		<nav id="navbar" class="large-12 columns" role="navigation">
       <?php wp_nav_menu( array( 'theme_location' => 'primary', 
                                 'container' => false,
-                                'menu_class' => 'inline-list' ) ); ?>
+                                'menu_class' => 'nav-list' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 

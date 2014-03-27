@@ -48,13 +48,45 @@ a:hover { color: #669966 }
  */
 
 .masthead {
-  font: 4rem 'Andada', Georgia, serif;
   text-transform: uppercase;
 }
 
+.masthead img {
+  width: 70px;
+  margin: 1.2rem 0rem;
+}
+
+.wordmark {
+  display: inline;
+  font: 2.5rem 'Andada', Georgia, serif;
+  letter-spacing: -1px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
 #navbar {
-  border-bottom: 2px solid #555;
+  text-transform: uppercase;
+  border-bottom: 1px solid #555;
   margin-bottom: 1rem;
+}
+
+#navbar ul.nav-list {
+  letter-spacing: -1px;
+  margin: 0 auto 0.5rem auto;
+  list-style: none;
+  text-align: center;
+}
+
+#navbar ul.nav-list li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#navbar a { padding: 10px }
+
+#navbar a:hover {
+  background: #09402E;
+  color: #eee;
 }
 
 
@@ -79,7 +111,6 @@ a:hover { color: #669966 }
 }
 
 /* SIDEBAR STYLES */
-#secondary { padding-top: 1rem; }
 
 #secondary aside ul {
   font-size: 0.9rem;
@@ -99,7 +130,7 @@ a:hover { color: #669966 }
 
 #footer-container { 
   width: 100%; 
-  border-top: 1px solid #ddd; 
+  border-bottom: 25px solid #7d5f22; 
   background-color: #eedfc1; 
   padding-top: 2rem;
 }
@@ -116,13 +147,13 @@ a:hover { color: #669966 }
 }
 
 .single-header {
-  border-bottom: 1px solid #ddd;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
 }
 
 .entry-meta {
-  padding-top: 0.9rem;
+  padding-top: 0.2rem;
   line-height: 160%;
 }
 
