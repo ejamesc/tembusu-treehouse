@@ -39,6 +39,8 @@ body {
   font-family: 'PT Serif', Georgia, serif;
 }
 
+h1, h2, h3, h4 { font-family: "Andada", Georgia, serif; }
+
 a { color: #006633 }
 a:hover { color: #669966 }
 
@@ -130,7 +132,7 @@ a:hover { color: #669966 }
 
 #footer-container { 
   width: 100%; 
-  border-bottom: 25px solid #7d5f22; 
+  border-bottom: 10px solid #3a2c10; 
   background-color: #eedfc1; 
   padding-top: 2rem;
 }
@@ -139,6 +141,22 @@ a:hover { color: #669966 }
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+
+#footer-container ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.footer-heading {
+  margin-bottom: 1rem;
+}
+
+#footer-container li {
+  border-bottom: 1px solid #ccc;
+  width: 60%;
+}
+
+#footer-container li a { display: block; }
 
 /* SINGLE POST STYLES */
 
@@ -173,7 +191,7 @@ a:hover { color: #669966 }
 }
 
 p.wp-caption-text {
-  font-size: 0.8rem;
+  font-size: 90%;
   color: #777;
 }
 
