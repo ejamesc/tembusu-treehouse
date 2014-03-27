@@ -9,7 +9,8 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
+<div class="row">
+	<section id="primary" class="content-area small-12 large-9 column">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -77,18 +78,30 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+      <?php /* Start the Loop */ ?>
+      <?php while ( have_posts() ) : the_post(); ?>
+      <section class="post row">
+        <div class="small-12 large-5 column">
+          <?php if( has_post_thumbnail() ) : ?>
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail() ?></a>
+          <?php endif ?>
+        </div>
 
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
+        <div class="small-12 medium-7 column">
+        <h1 class="entry-title">
+          <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+        </h1>
+        <div class="entry-summary">
+          <?php the_excerpt(); ?>
+          <footer class="entry-footer">
+            <a href="<?php the_permalink(); ?>">Read more &rarr;</a>
+          </footer>
+          </div><!-- .entry-summary -->
+        </div> <!--small-12 medium-5-->
 
-			<?php endwhile; ?>
+      </section>
+
+      <?php endwhile; ?>
 
 			<?php treehouse_paging_nav(); ?>
 
@@ -101,5 +114,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
+  <?php get_sidebar(); ?>
+</div> <!--row-->
 <?php get_footer(); ?>

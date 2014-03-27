@@ -26,16 +26,9 @@
 		
 			</header><!-- .entry-header -->
 
-	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
-	<?php else : ?>
-	<div class="entry-summary">
-    <?php the_excerpt(); ?>
-    
-	</div><!-- .entry-content -->
-	<?php endif; ?>
 
   <footer class="entry-footer">
   <a href="<?php the_permalink(); ?>">Read more &rarr;</a>

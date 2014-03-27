@@ -75,7 +75,7 @@ a:hover { color: #669966 }
 
 .cat-links {
   text-transform: uppercase;
-  font: 0.6rem "Helvetica Neue", Arial, sans-serif;
+  font: 0.6rem "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* SIDEBAR STYLES */
@@ -109,7 +109,7 @@ a:hover { color: #669966 }
   padding-bottom: 2rem;
 }
 
-/* SINGLE PAGE STYLES */
+/* SINGLE POST STYLES */
 
 .single-title {
   font: 2rem 'Andada', Georgia, serif;
@@ -137,3 +137,21 @@ a:hover { color: #669966 }
   padding-bottom: 2rem;
 }
 
+.entry-content {
+  padding-bottom: 2rem;
+}
+
+/* SINGLE PAGE STYLES */
+.page-title {
+  font-family: 'Andada', Georgia, serif;
+}
+
+/* CATEGORY PAGE STYLES */
+section.post {
+  padding-bottom: 1.5rem;
+}
+
+.taxonomy-description {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
