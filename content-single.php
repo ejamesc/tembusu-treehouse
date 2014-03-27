@@ -5,6 +5,12 @@
 ?>
 <header class="single-header small-12 column">
 		<h1 class="single-title"><?php the_title(); ?></h1>
+   <?php if( has_post_thumbnail() ) : ?>
+      <section class="single-lede-image"> 
+        <?php the_post_thumbnail() ?>
+      </section>
+    <?php endif ?>
+
 </header><!-- .single-header -->
 
 <div class="small-12 large-2 column">

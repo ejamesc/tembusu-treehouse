@@ -5,7 +5,7 @@
  * @package treehouse
  */
 ?>
-<div class="small-12 large-7 large-offset-1 column">
+<div class="small-12 large-8 large-offset-1 column">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<h1 class="page-title"><?php the_title(); ?></h1>

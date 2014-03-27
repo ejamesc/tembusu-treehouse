@@ -141,13 +141,45 @@ a:hover { color: #669966 }
   padding-bottom: 2rem;
 }
 
+p.wp-caption-text {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+@media only screen {
+  .single-lede-image {
+    height: 8rem;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 40.063em) { 
+  .single-lede-image {
+    height: 17rem;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 64.063em) { 
+  .single-lede-image {
+    height: 20rem;
+    overflow: hidden;
+  }
+}
+
+
+.single-lede-image img {
+  width: 100%;
+  margin-top: -25%;
+}
+
 /* SINGLE PAGE STYLES */
 .page-title {
   font-family: 'Andada', Georgia, serif;
 }
 
 /* CATEGORY PAGE STYLES */
-section.post {
+section.collection-post {
   padding-bottom: 1.5rem;
 }
 

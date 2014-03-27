@@ -80,7 +80,7 @@ get_header(); ?>
 
       <?php /* Start the Loop */ ?>
       <?php while ( have_posts() ) : the_post(); ?>
-      <section class="post row">
+      <section class="collection-post row">
         <div class="small-12 large-5 column">
           <?php if( has_post_thumbnail() ) : ?>
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail() ?></a>
