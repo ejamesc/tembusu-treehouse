@@ -16,6 +16,7 @@
 <div class="small-12 large-2 column">
   <div class="entry-meta">
       <?php treehouse_posted_on(); ?>
+      <?php echo do_shortcode('[ssba]'); ?>
   </div><!-- .entry-meta -->    
 </div>
 
