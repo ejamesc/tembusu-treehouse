@@ -264,6 +264,8 @@ p.wp-caption-text {
 /* SINGLE PAGE STYLES */
 .page-title {
   font: 2rem 'Andada', Georgia, serif;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
 }
 
 /* CATEGORY PAGE STYLES */
