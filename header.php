@@ -7,6 +7,23 @@
  * @package treehouse
  */
 ?><!DOCTYPE html>
+<!--
+ _____               _                     
+/__   \___ _ __ ___ | |__  _   _ ___ _   _ 
+  / /\/ _ \ '_ ` _ \| '_ \| | | / __| | | |
+ / / |  __/ | | | | | |_) | |_| \__ \ |_| |
+ \/   \___|_| |_| |_|_.__/ \__,_|___/\__,_|
+   ___      _ _                 
+  / __\___ | | | ___  __ _  ___ 
+ / /  / _ \| | |/ _ \/ _` |/ _ \
+/ /__| (_) | | |  __/ (_| |  __/
+\____/\___/|_|_|\___|\__, |\___|
+                     |___/      
+
+If you're looking at this, you've probably got some web design chops. 
+If you're ALSO a Tembusian, please contribute by getting in touch with the people behind Treehouse!
+
+-->
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">

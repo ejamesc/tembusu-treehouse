@@ -20,7 +20,7 @@
   </div><!-- .entry-meta -->    
 </div>
 
-<div class="small-12 large-7 column">
+<div class="small-12 medium-9 large-7 column">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="entry-content">
