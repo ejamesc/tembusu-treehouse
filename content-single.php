@@ -36,38 +36,20 @@
 	<footer class="entry-footer">
 		<?php
 			/* translators: used between list items, there is a space after the comma */
-			$category_list = get_the_category_list( __( ', ', 'treehouse' ) );
+			// $category_list = get_the_category_list( __( ', ', 'treehouse' ) );
 
 			/* translators: used between list items, there is a space after the comma */
 			$tag_list = get_the_tag_list( '', __( ', ', 'treehouse' ) );
 
-			if ( ! treehouse_categorized_blog() ) {
-				// This blog only has 1 category so we just need to worry about tags in the meta text
-				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was tagged %2$s.<br/> Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'treehouse' );
-				} else {
-					$meta_text = __( 'Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'treehouse' );
-				}
-
-			} else {
-				// But this blog has loads of categories so we should probably display them here
-				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was posted in %1$s.<br/>It was tagged %2$s.<br/>Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'treehouse' );
-				} else {
-					$meta_text = __( 'This entry was posted in %1$s.<br/>Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'treehouse' );
-				}
-
-			} // end check for categories on this blog
+			$meta_text = __( 'Tags: %1$s.', 'treehouse' );
 
 			printf(
 				$meta_text,
-				$category_list,
-				$tag_list,
-				get_permalink()
+				$tag_list
 			);
 		?>
 
-		<?php edit_post_link( __( 'Edit', 'treehouse' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( '(Edit)', 'treehouse' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 </div>
