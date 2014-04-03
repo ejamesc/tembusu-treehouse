@@ -170,7 +170,7 @@ a:hover { color: #669966 }
   width: 100%; 
   font-size: 0.9rem;
   border-bottom: 10px solid #3a2c10; 
-  background-color: #eedfc1; 
+  background: #eedfc1 url(img/tembusu_crest.png) no-repeat 113% 52% / 30%;
   padding-top: 2rem;
 }
 
