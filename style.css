@@ -263,7 +263,7 @@ p.wp-caption-text {
 
 /* SINGLE PAGE STYLES */
 .page-title {
-  font-family: 'Andada', Georgia, serif;
+  font: 2rem 'Andada', Georgia, serif;
 }
 
 /* CATEGORY PAGE STYLES */
