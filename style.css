@@ -136,6 +136,17 @@ a:hover { color: #669966 }
 .green { background-color: #09402E; }
 .green:hover { background-color: #669966; }
 
+/* PAGE NAVIGATION STYLES */
+.nav-next { 
+  display: inline-block; 
+  float: right;
+}
+
+.nav-previous {
+  display: inline-block;
+  float: left;
+}
+
 /* SIDEBAR STYLES */
 
 #secondary aside ul {

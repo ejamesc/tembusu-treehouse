@@ -103,7 +103,6 @@ get_header(); ?>
 
       <?php endwhile; ?>
 
-			<?php treehouse_paging_nav(); ?>
 
 		<?php else : ?>
 
@@ -115,5 +114,6 @@ get_header(); ?>
 	</section><!-- #primary -->
 
   <?php get_sidebar(); ?>
+	<?php treehouse_paging_nav(); ?>
 </div> <!--row-->
 <?php get_footer(); ?>

@@ -19,10 +19,8 @@ function treehouse_paging_nav() {
 		return;
 	}
 	?>
-	<nav class="navigation paging-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'treehouse' ); ?></h1>
+	<nav class="navigation paging-navigation large-10 columns end" role="navigation">
 		<div class="nav-links">
-
 			<?php if ( get_next_posts_link() ) : ?>
 			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'treehouse' ) ); ?></div>
 			<?php endif; ?>
