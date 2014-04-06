@@ -121,17 +121,12 @@ a:hover { color: #669966 }
 .green { background-color: #09402E; }
 .green:hover { background-color: #669966; }
 
-.front-thumbnail {
-  height: 387px;
-  width: 256px;
-  overflow: hidden;
-}
-
-.front-thumbnail img { width: 100%; }
+.orbit-container img { min-width: 970px; }
 
 .orbit-container { margin-bottom: 1rem; }
 
-.orbit-bullets-container { display: none; }
+/* This is a hack, because I was lazy to modify Foundation */
+.orbit-bullets-container { display: none; } 
 
 a.slider-text {
   font-size: 1.5rem;

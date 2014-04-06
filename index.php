@@ -15,7 +15,7 @@ get_header(); ?>
 
 <div class="row">
     <?php // Begin orbit slider ?>
-    <?php query_posts( array ( 'category_name' => 'headline') ); // populate from headline category ?>
+    <?php query_posts( array ( 'category_name' => 'headline', 'posts_per_page' => 3) ); // populate from headline category ?>
 		<?php if ( have_posts() ) : ?>
       <div class="small-12 large-12 columns">
         <ul class="orbit" data-orbit>
