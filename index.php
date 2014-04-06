@@ -20,8 +20,9 @@ get_header(); ?>
       <div class="small-12 large-12 columns">
         <ul class="orbit" data-orbit>
           <?php while ( have_posts() ) : the_post(); ?>
-            <?php if( has_post_thumbnail() ) : ?>
-              <li><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail() ?></a>
+            <?php $image = get_field('cropped_header_image');
+            if( !empty($image) ): ?>
+              <li><a href="<?php the_permalink(); ?>"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
                 <div class="orbit-caption">
                   <a class="slider-text" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                 </div>
