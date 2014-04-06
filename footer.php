@@ -14,7 +14,7 @@
   <div class="row">
     <div class="small-12 large-4 columns" role="navigation">
       <h3 class="footer-heading">Navigation</h3>
-      <?php wp_nav_menu( array( 'theme_location' => 'primary', 
+      <?php wp_nav_menu( array( 'theme_location' => 'footer', 
                                 'container' => false,
                                 'menu_class' => 'footer-nav-list' ) ); ?>
  

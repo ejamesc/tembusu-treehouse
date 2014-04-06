@@ -42,12 +42,14 @@
 			/* translators: used between list items, there is a space after the comma */
 			$tag_list = get_the_tag_list( '', __( ', ', 'treehouse' ) );
 
-			$meta_text = __( 'Tags: %1$s', 'treehouse' );
+      if ( '' != $tag_list ) {
+			  $meta_text = __( 'Tags: %1$s', 'treehouse' );
 
-			printf(
-				$meta_text,
-				$tag_list
-			);
+			  printf(
+				  $meta_text,
+				  $tag_list
+			  );
+      }
 		?>
 
 		<?php edit_post_link( __( '(Edit)', 'treehouse' ), '<span class="edit-link">', '</span>' ); ?>
