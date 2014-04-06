@@ -14,10 +14,24 @@
 get_header(); ?>
 
 <div class="row">
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
+    <?php // Begin orbit slider ?>
+    <?php query_posts( array ( 'category_name' => 'headline') ); // populate from headline category ?>
 		<?php if ( have_posts() ) : ?>
+      <div class="small-12 large-12 columns">
+        <ul class="orbit" data-orbit>
+          <?php while ( have_posts() ) : the_post(); ?>
+            <?php if( has_post_thumbnail() ) : ?>
+              <li><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail() ?></a>
+                <div class="orbit-caption">
+                  <a class="slider-text" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                </div>
+              </li>
+            <?php endif; // End of has post thumbnail ?>
+          <?php endwhile; // end of loop ?>
+          </ul>
+      </div>
+    <?php endif; wp_reset_query(); // End of if have_posts ?>
+    <?php if ( have_posts() ) : ?>
       <div class="small-12 large-10 columns">
         <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2"> 
 			  <?php /* Start the Loop */ ?>
@@ -33,7 +47,7 @@ get_header(); ?>
 
         <?php endwhile; ?>
         </ul>
-      </div> <!--small-6-->
+      </div> <!--small-12 large-10-->
     
 
 		<?php else : ?>
@@ -41,9 +55,6 @@ get_header(); ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
   <?php get_sidebar(); ?>
 	<?php treehouse_paging_nav(); ?>
