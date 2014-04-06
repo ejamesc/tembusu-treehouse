@@ -46,6 +46,10 @@
 <?php wp_footer(); ?>
 <script>
   $(document).foundation();
+<?php if( is_home() ) { 
+  echo "$(window).load(function(){ 
+    $('#slider').show().css('height', '320px'); });"; 
+} ?>
 </script>
 </body>
 </html>
