@@ -121,6 +121,14 @@ a:hover { color: #669966 }
 .green { background-color: #09402E; }
 .green:hover { background-color: #669966; }
 
+.front-thumbnail {
+  height: 387px;
+  width: 256px;
+  overflow: hidden;
+}
+
+.front-thumbnail img { width: 100%; }
+
 .orbit-container { margin-bottom: 1rem; }
 
 .orbit-bullets-container { display: none; }
@@ -286,7 +294,6 @@ p.wp-caption-text {
 
 .single-lede-image img {
   width: 100%;
-  margin-top: -25%;
 }
 
 /* SINGLE PAGE STYLES */

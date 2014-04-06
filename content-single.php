@@ -5,11 +5,12 @@
 ?>
 <header class="single-header small-12 column">
 		<h1 class="single-title"><?php the_title(); ?></h1>
-   <?php if( has_post_thumbnail() ) : ?>
+    <?php $image = get_field('cropped_header_image');
+    if( !empty($image) ): ?>
       <section class="single-lede-image"> 
-        <?php the_post_thumbnail() ?>
+	        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
       </section>
-    <?php endif ?>
+    <?php endif; ?>      
 
 </header><!-- .single-header -->
 
