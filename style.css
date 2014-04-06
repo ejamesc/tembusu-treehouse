@@ -177,6 +177,12 @@ a.slider-text:hover { text-decoration: underline; }
 
 .widget li a { display: block; }
 
+ul.social-widget li { margin-bottom: 13px; }
+
+img.social { 
+  margin: -15px;
+}
+
 input.search-field { 
   display: inline-block;
   vertical-align: top;

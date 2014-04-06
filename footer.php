@@ -48,7 +48,7 @@
   $(document).foundation();
 <?php if( is_home() ) { 
   echo "$(window).load(function(){ 
-    $('#slider').show().css('height', '320px'); });"; 
+    $('#slider').css('height', '320px').fadeIn(); });"; 
 } ?>
 </script>
 </body>
