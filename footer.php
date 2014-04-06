@@ -34,14 +34,18 @@
     </div>
   </div>
   <div class="row">
-	<div id="colophon" class="large-12 columns" role="contentinfo">
-    &copy; Tembusu College &amp; Our Authors
+	<div id="colophon" class="small-12 large-8 columns" role="contentinfo">
+    &copy; Treehouse. All rights reserved.<br/>
+    All text and images are owned by Treehouse and our contributors unless otherwise stated. Content may not be copied or reproduced without permission.<br/><br/>
+    <small>DISCLAIMER: Content on Treehouse is not fully representative of Tembusu College. Not all content is official. Information on this site may contain errors or inaccuracies. If you own rights to any of the content and wish to have it modified or removed, please contact us.</small>
 	</div><!-- #colophon -->
   </div><!--row-->
 </footer><!--footer-container-->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<script>
+  $(document).foundation();
+</script>
 </body>
 </html>

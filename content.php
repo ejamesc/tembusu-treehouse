@@ -20,7 +20,7 @@
 
     <?php if( has_post_thumbnail() ) : ?>
       <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail() ?></a>
-    <?php endif ?>
+    <?php endif; // End of has post thumbnail ?>
 <h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
 		
