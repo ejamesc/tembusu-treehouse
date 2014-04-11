@@ -329,6 +329,32 @@ p.wp-caption-text {
   margin-bottom: 1rem;
 }
 
+.page-lede-image {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+@media only screen {
+  .page-lede-image {
+    height: 4rem;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 40.063em) { 
+  .page-lede-image {
+    height: 8rem;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 64.063em) { 
+  .page-lede-image {
+    height: 10rem;
+    overflow: hidden;
+  }
+}
+
 /* CATEGORY PAGE STYLES */
 section.collection-post {
   padding-bottom: 1.5rem;

@@ -5,7 +5,16 @@
  * @package treehouse
  */
 ?>
-<div class="small-12 large-7 large-offset-1 column">
+<header class="small-12 column">
+    <?php $image = get_field('page_header_image');
+    if( !empty($image) ): ?>
+      <section class="page-lede-image"> 
+	        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+      </section>
+    <?php endif; ?>      
+</header><!-- .single-header -->
+
+<div class="small-12 large-8 large-offset-1 column page-content">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<h1 class="page-title"><?php the_title(); ?></h1>
