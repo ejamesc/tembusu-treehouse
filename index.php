@@ -18,7 +18,10 @@ get_header(); ?>
     <?php query_posts( array ( 'category_name' => 'headline', 'posts_per_page' => 3) ); // populate from headline category ?>
 		<?php if ( have_posts() ) : ?>
       <div class="small-12 large-12 columns">
-        <ul id="slider" class="orbit" style="display: none;" data-orbit>
+        <ul id="slider" class="orbit" style="display: none;" data-orbit
+        data-options="timer_speed: 3000;
+                      pause_on_hover: true;
+                      resume_on_mouseout: true;">
           <?php while ( have_posts() ) : the_post(); ?>
             <?php $image = get_field('cropped_header_image');
             if( !empty($image) ): ?>
