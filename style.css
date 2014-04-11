@@ -164,7 +164,7 @@ a.slider-text:hover { text-decoration: underline; }
 }
 
 .widget-title {
-  font: 1rem "Helvetica-Neue", Helvetica, Arial, sans-serif;
+  font: 1rem "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .textwidget {
@@ -207,6 +207,24 @@ input.search-submit {
   text-indent: -5px;
   height: 36px;
   vertical-align: bottom;
+}
+
+
+a.explain {
+  text-align: left;
+  font: 1.1rem "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  padding: 5px 5px 5px 0;
+  display: block;
+  line-height: 90% !important;
+}
+
+.light-green {
+  color: #00994c;
+}
+
+.lighter-green {
+  color: #0a5;
 }
 
 /* FOOTER STYLES */
@@ -299,7 +317,6 @@ p.wp-caption-text {
     overflow: hidden;
   }
 }
-
 
 .single-lede-image img {
   width: 100%;
