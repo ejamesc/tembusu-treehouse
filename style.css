@@ -90,7 +90,11 @@ a:hover { color: #669966 }
   margin-right: 10px;
 }
 
-#navbar a { padding: 10px }
+#navbar a { 
+  padding: 10px;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
 
 #navbar a:hover {
   background: #09402E;
