@@ -36,7 +36,6 @@
   <div class="row">
 	<div id="colophon" class="small-12 large-8 columns" role="contentinfo">
     &copy; Treehouse. All rights reserved.<br/>
-    All text and images are owned by Treehouse and our contributors unless otherwise stated. Content may not be copied or reproduced without permission.<br/><br/>
 	</div><!-- #colophon -->
   </div><!--row-->
 </footer><!--footer-container-->

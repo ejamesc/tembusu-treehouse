@@ -31,6 +31,7 @@ If you're ALSO a Tembusian, please contribute by getting in touch with the peopl
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico" />
 
 <?php wp_head(); ?>
 <!--[if lt IE 9]>
